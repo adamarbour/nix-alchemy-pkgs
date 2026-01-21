@@ -12,10 +12,10 @@ let
   packages = import ./default.nix { inherit system nixpkgs pkgs; };
 in pkgs.mkShell {
   packages = with pkgs; [
-    nix
+    alejandra
+    cachix
     git
-    jq
-    # add anything you commonly need for packaging work
+    npins
   ];
 
   # Convenience: makes `repoPkgs.<name>` visible via `nix repl`, etc.

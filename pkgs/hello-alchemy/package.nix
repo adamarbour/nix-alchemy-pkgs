@@ -10,7 +10,7 @@
 }:
 
 stdenv.mkDerivation (finalAttrs: {
-  pname = "hello";
+  pname = "hello-alchemy";
   version = "2.12.2";
 
   src = fetchurl {
