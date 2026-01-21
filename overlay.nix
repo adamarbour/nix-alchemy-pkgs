@@ -5,5 +5,5 @@ let
     (builtins.readDir ./pkgs);
   myPkgs = lib.mapAttrs (name: _type: final.callPackage (./pkgs + "/${name}/package.nix") { }) pkgDirs;
 in {
-  alchemy = myPkgs;
+  mypkgs = myPkgs;
 }
