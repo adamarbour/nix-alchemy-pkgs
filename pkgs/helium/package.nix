@@ -31,6 +31,7 @@
   libvdpau,
   gcc-unwrapped,
   patchelfUnstable,
+  ...
 }: let
   helium-widevine = callPackage ./widevine-x86_64-linux.nix {};
 in
