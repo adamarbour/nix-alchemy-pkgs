@@ -1,6 +1,6 @@
 final: prev:
 let
-  sources = ./npins;
+  sources = import ./npins;
   lib = final.lib;
   pkgDirs = lib.filterAttrs (_name: type: type == "directory")
     (builtins.readDir ./pkgs);
