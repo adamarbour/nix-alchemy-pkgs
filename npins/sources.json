@@ -1,5 +1,37 @@
 {
   "pins": {
+    "flake-compat": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nixos",
+        "repo": "flake-compat"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v1.1.0",
+      "revision": "ff81ac966bb2cae68946d5ed5fc4994f96d0ffec",
+      "url": "https://api.github.com/repos/nixos/flake-compat/tarball/refs/tags/v1.1.0",
+      "hash": "sha256-NeCCThCEP3eCl2l/+27kNNK7QrwZB1IJCrXfrbv5oqU="
+    },
+    "mangowc": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "dreammaomao",
+        "repo": "mangowc"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "0.11.0",
+      "revision": "d78526d1e92acc3c926c1da26d27708f500875aa",
+      "url": "https://api.github.com/repos/dreammaomao/mangowc/tarball/refs/tags/0.11.0",
+      "hash": "sha256-zjMDW2Izd2GOKDfekf5/O1LaiI+rGzxmdhzOpzbAvvE="
+    },
     "nixpkgs": {
       "type": "Git",
       "repository": {

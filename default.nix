@@ -12,5 +12,5 @@ let
   lib = pkgs.lib;
   pkgDirs = lib.filterAttrs (_name: type: type == "directory")
     (builtins.readDir ./pkgs);
-  packages = lib.mapAttrs (name: _type: pkgs.callPackage (./pkgs + "/${name}/package.nix") { }) pkgDirs;
+  packages = lib.mapAttrs (name: _type: pkgs.callPackage (./pkgs + "/${name}/package.nix") { inherit sources; }) pkgDirs;
 in packages
